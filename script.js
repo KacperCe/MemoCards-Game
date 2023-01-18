@@ -3,7 +3,7 @@ let cardsArray = []
 for (let i = 1; i < 47; i++) {
     cardsArray.push({
         id: `${i}`,
-        img: `/assets/cards/Image-${i}.png`
+        img: `assets/cards/Image-${i}.png`
     })
 }
 
