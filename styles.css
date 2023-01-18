@@ -1,12 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 body {
-    background-color: rgb(99, 99, 99);
+    background-color: rgb(28, 23, 34);
     display: flex;
-    justify-content: center; 
-}   
+    justify-content: center;
+}
+
+.main-menu {
+    margin: 4rem 6rem;
+}
+
+
+.neon-title {
+    font-family: neon;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    line-height: 0.8em;
+    -webkit-box-reflect: below -8px linear-gradient(transparent, #0000002f);
+    outline: none;
+    /* animation: neon-text 5s linear infinite; */
+}
+
+.neon-title .memo {
+    animation: neon-text 5s linear infinite;
+}
+
+.neon-title .cards {
+    font-family: 'sacramento';
+    font-size: 4rem;
+    filter: drop-shadow(2px 4px 6px rgb(22, 22, 22));
+    color: rgb(206, 211, 130);
+    text-shadow: 2px 0 2px rgb(212, 194, 28),
+        0 0 10px rgb(212, 194, 28),
+        0 0 20px rgb(212, 194, 28);
+    /* 0 0 40px rgb(212, 194, 28),
+      0 0 80px rgb(212, 194, 28),
+      0 0 120px rgb(212, 194, 28); */
+    /* 0 0 220px rgb(212, 194, 28); */
+}
 
 .grid {
     display: grid;
-    background-color: #818181;
+    background-color: #68636e;
     border-radius: 20px;
     padding: 16px;
     grid-template-columns: repeat(4, 1fr);
@@ -33,47 +72,47 @@ body {
     transform-style: preserve-3d;
     perspective: 1000px;
     border-radius: 16px;
-    -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -2px 2px 6px 0px rgb(30 30 30);
+    -moz-box-shadow: -2px 2px 6px 0px rgb(30 30 30);
+    box-shadow: -2px 2px 6px 0px rgb(30 30 30);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    border-radius: 16px;
+    border-radius: 14px;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*Safari */
-
+    -webkit-backface-visibility: hidden;
 }
 
-.flip-left, .pair{
-  transform: rotateY(-180deg);
+.flip-left,
+.pair {
+    transform: rotateY(-180deg);
 }
 
 .pair {
-  background: white;
-  box-shadow: 0px 0px 3px 2px rgb(53, 211, 92);
+    box-shadow: 0px 0px 4px 4px rgb(255 239 45);
 }
 
 .card-front {
-    background: linear-gradient(45deg, #464646 0%, #242424 100%);
+    background: linear-gradient(45deg, #15081a 0%, #2a212e 100%)
 }
 
 .card-back {
-    background: linear-gradient(45deg, #353535 0%, #1a1a1a 100%);
+    background: linear-gradient(45deg, #1b1b1b 0%, #1a1a1a 100%);
     transform: rotateY(180deg);
 }
 
-.card img {
+
+img {
     width: 90%;
     height: 90%;
-    filter: saturate(150%);
-    filter: brightness(120%);
+    filter: saturate(120%) brightness(120%) drop-shadow(2px 2px 5px black);
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -81,4 +120,38 @@ body {
     -ms-user-select: none;
 }
 
+@keyframes neon-text {
 
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: rgb(62, 43, 63);
+        text-shadow: none;
+    }
+
+    18.2%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: rgb(233, 160, 176);
+        text-shadow: 2px 0 2px rgb(212, 28, 98),
+            0 0 10px rgb(212, 28, 98),
+            0 0 20px rgb(212, 28, 98),
+            0 0 40px rgb(212, 28, 98),
+            0 0 80px rgb(212, 28, 98),
+            0 0 150px rgb(212, 28, 98),
+            0 0 260px rgb(212, 28, 98);
+    }
+}
