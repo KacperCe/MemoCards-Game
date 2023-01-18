@@ -94,16 +94,8 @@ a {
     background-color: #68636e;
     border-radius: 20px;
     padding: 16px;
-
-    /* width: 70vh;
-    height: 70vh; */
 }
 
-/* .card {
-    background-color: transparent;
-
-    perspective: 1000px;
-} */
 
 .card {
     position: relative;
