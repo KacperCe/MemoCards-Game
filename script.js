@@ -158,7 +158,6 @@ function checkForMatch (){
             cardsForCheck[i].removeEventListener("click", flipCard)
         }
     } else {
-       
         setTimeout(() => {
             for (let i = 0; i < cardsForCheck.length; i++) {
                 cardsForCheck[i].classList.remove("flip-left");
