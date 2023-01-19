@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: neonregular;
-    src: url('neon____-webfont.woff2') format('woff2'),
-        url('neon____-webfont.woff') format('woff');
+    src: url('../../MemoCards-Game/neon____-webfont.woff2') format('woff2'),
+        url('../../MemoCards-Game/neon____-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
