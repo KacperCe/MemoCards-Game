@@ -4,8 +4,6 @@
     font-family: neonregular;
     src: url('../MemoCards-Game/neon____-webfont.woff2') format('woff2'),
         url('../MemoCards-Game/neon____-webfont.woff') format('woff'),
-        url('/neon____-webfont.woff2') format('woff2'),
-        url('/neon____-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -72,7 +70,6 @@ a {
     line-height: 0.7em;
     -webkit-box-reflect: below -8px linear-gradient(transparent, #0000002f);
     outline: none;
-    /* animation: neon-text 5s linear infinite; */
 }
 
 .neon-title .memo {
@@ -87,10 +84,6 @@ a {
     text-shadow: 2px 0 2px rgb(212, 194, 28),
         0 0 10px rgb(212, 194, 28),
         0 0 20px rgb(212, 194, 28);
-    /* 0 0 40px rgb(212, 194, 28),
-      0 0 80px rgb(212, 194, 28),
-      0 0 120px rgb(212, 194, 28); */
-    /* 0 0 220px rgb(212, 194, 28); */
 }
 
 .grid {
