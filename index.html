@@ -7,12 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MemoCards</title>
+    <link rel="icon" type="image/x-ixon" href="assets/favicon.png">
 </head>
 
 <body>
+
     <div class="flex-container">
         <h1 class="neon-title"><span class="memo">Memo</span><span class="cards">cards</span></h1>
         <div class="grid">
+            <div class="win-popup">
+                <img src="assets/trophy.png" alt="trophy" class="trophy">
+                <p>Congratulations, you found all the pairs. You did it in <span class="movecount"></span> moves</p>
+                <button class="close"><img src="assets/close.svg" alt="close button"></button>
+            </div>
         </div>
         <div class="main-menu">
             <div class="score">Moves: <span id="moves">0</span></div>
